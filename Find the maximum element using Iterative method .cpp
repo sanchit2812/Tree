@@ -1,3 +1,5 @@
+#Find the maximum value of a node using Iterative method
+
 int findmaxI(struct node* root){
     queue <node* > q;
     int mx = INT_MIN;
