@@ -1,3 +1,4 @@
+# Check the presence of a path with a given sum
 
 bool SumPath(node* root, int sum){
     if(!root) return sum == 0;
