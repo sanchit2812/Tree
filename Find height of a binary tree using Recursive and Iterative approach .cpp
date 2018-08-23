@@ -1,4 +1,6 @@
-int heightR(node* root){
+# Find height of a binary tree using Recursive approach
+
+int heightR(node* root)
     int l,r;
     if(!root) return 0;
     while(root){
@@ -7,6 +9,8 @@ int heightR(node* root){
         return max(l,r)+1;
     }
 }
+
+#Find height of a binary tree using Iterative approach
 
 int heightI(node* root){
     if(!root) return 0;
