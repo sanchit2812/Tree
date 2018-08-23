@@ -1,3 +1,5 @@
+# Find the presence of a node in a Binary tree using RECURSION
+
 int findR(struct node* root, int value){
     int temp;
     if(root == NULL) return 0;
