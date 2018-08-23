@@ -1,3 +1,7 @@
+# Insertion of a node in a Binary Tree
+#newNode(data ) is used to create a new node
+
+
 void insertion(node * root, int value){
     queue <node *> q;
     if(!root){
