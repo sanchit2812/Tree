@@ -1,3 +1,5 @@
+# Recursive program for comparing two structures of binary trees
+
 int checkstructure(node* root,node* root1){
     if(root == NULL && root1==NULL) return 1;
     else if(root==NULL || root1 == NULL) return 0;
