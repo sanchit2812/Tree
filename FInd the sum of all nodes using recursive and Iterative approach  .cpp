@@ -1,3 +1,10 @@
+#through recursive approach :
+int allsum(node* root){
+    if(!root) return 0;
+    return (root->data + allsum(root->left) + allsum(root->right));
+}
+
+# through level order approach
 int allsum(node* root){
     if(!root) return 0;
     queue <node* > q;
@@ -14,14 +21,7 @@ int allsum(node* root){
     return sum;
 }
 
-//
-int allsum(node* root){
-    if(!root) return 0;
-    return (root->data + allsum(root->left) + allsum(root->right));
-}
-
-
-//
+#through level order traversal (second ) approach :
 int allsum(node* root){
     if(!root) return 0;
     queue <node* > q;
