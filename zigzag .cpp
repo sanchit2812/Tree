@@ -1,4 +1,5 @@
 void zigzag(node* root){
+    if(!root) return ;
     stack <node*> s,t;
     s.push(root);
     node* temp;
