@@ -1,3 +1,5 @@
+# KEY POINT :: first push node->right then node->left
+
 void reverseLevelOrder(node* root){
     stack< int > s;
     queue<node*> q;
