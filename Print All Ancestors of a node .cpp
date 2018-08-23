@@ -1,3 +1,5 @@
+#Print ALL ANCESTORS OF A NODE::
+
 int printAncestors(node* root, int value){
     if(root== NULL) return 0;
     if(root->data == value) return 1;
