@@ -13,6 +13,9 @@ struct node* newNode(int data){
     Node->data = data;
     return Node;
 };
+
+
+#preorder
 void preOrderIterative(struct node *root){
 
     stack <node*> s;
@@ -29,6 +32,8 @@ void preOrderIterative(struct node *root){
     }
 }
 
+#inorder
+
 void inOrderIterative(struct node *root){
     stack <node*> s;
     while(1){
@@ -43,6 +48,8 @@ void inOrderIterative(struct node *root){
         root = root->right;
     }
 }
+
+#postorder
 
 void postOrderIterative(struct node* root){
     stack <node*> s;
@@ -66,6 +73,8 @@ void postOrderIterative(struct node* root){
     return;
 }
 
+#level order
+
 void levelOrder(struct node* root){
     queue <node *> q;
     if(!root) return ;
@@ -79,17 +88,6 @@ void levelOrder(struct node* root){
     }
 }
 
-
-int findmax(struct node* root){
-    int root_val, left, right, mx= INT_MIN;
-    if(root!=NULL){
-        root_val = root->data;
-        left = findmax(root->left);
-        right = findmax(root->right);
-        mx = max( root_val,max(left, right));
-    }
-    return mx;
-}
 int main(){
     struct node *root = NULL;
     root = newNode(1);
