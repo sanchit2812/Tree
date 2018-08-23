@@ -1,9 +1,11 @@
+# for finding the index from an array 
 int srch(int arr[], int strt, int last, int value){
     for(int i = strt; i <= last; i++){
         if(arr[i] == value) return i;
         }
-        }
+    }
 
+# Recursive program 
 node* buildTree(int in[], int pre[], int start, int last){
     static int preindex = 0;
     if(start >last) return NULL;
