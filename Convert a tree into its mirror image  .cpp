@@ -1,3 +1,5 @@
+# How to convert a tree into its mirror image
+
 void mirror(node* root){
     if(!root ) return ;
     else{
