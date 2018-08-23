@@ -1,3 +1,12 @@
+# for a tree : 
+
+       1
+      / \
+     2    3
+    / \   /\
+   4   5 6  7
+   #ZIGZAG traversal :: 1324567.
+ 
 void zigzag(node* root){
     if(!root) return ;
     stack <node*> s,t;
