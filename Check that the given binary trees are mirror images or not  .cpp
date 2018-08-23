@@ -1,3 +1,5 @@
+# Check that the given binary trees are mirror images or not ( recursive method )
+
 int checkmirror(node* root, node* root1){
     if(root== NULL && root1==NULL) return 1;
     else if(root==NULL || root1 == NULL) return 0;
