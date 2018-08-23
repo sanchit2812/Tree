@@ -1,5 +1,4 @@
-//iterative
-int findsizeI(node* root){
+# Iterative Approach ::int findsizeI(node* root){
     queue <node* > q;
     int cnt = 0;
     if(!root) return 0;
@@ -13,7 +12,8 @@ int findsizeI(node* root){
     }
     return cnt;
 }
-// recursive
+# Recursive Approach:: 
+
 int findsizeR(node* root){
     if(!root) return 0;
     return findsizeR(root->left) + 1 +findsizeR(root->right);
